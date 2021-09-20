@@ -18,6 +18,31 @@ function mondayWork(activity = 'go to the office') {
     return currentActivity
 }
 
-function calculato(params) {
-    
+const Calculator = {
+   add,
+   subtract,
+   multiply,
+   divide
+}
+
+
+
+function add() {
+    return  1 + 3
+}
+function subtract() {
+    return 1 - 3
+}
+function multiply() {
+    return  1 * 3
+}
+function divide() {
+    return  10 / 5
+}
+
+function actionApplyer(num, array) {
+    if (array.length === 0){
+        return num 
+    }
+    return array.forEach(element => {element(num)});
 }
